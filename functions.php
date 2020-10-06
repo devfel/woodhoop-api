@@ -6,6 +6,7 @@ require_once $dirbase . '/endpoints/user_post.php';
 require_once $dirbase . '/endpoints/user_get.php';
 
 require_once $dirbase . '/endpoints/photo_post.php';
+require_once $dirbase . '/endpoints/photo_delete.php';
 
 // Crop Images to be lighter
 update_option('medium_size_w', 300);
