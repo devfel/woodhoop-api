@@ -6,6 +6,7 @@ require_once $dirbase . '/endpoints/user_post.php';
 require_once $dirbase . '/endpoints/user_get.php';
 
 require_once $dirbase . '/endpoints/photo_post.php';
+require_once $dirbase . '/endpoints/photo_get.php';
 require_once $dirbase . '/endpoints/photo_delete.php';
 
 require_once $dirbase . '/endpoints/comment_post.php';
@@ -15,7 +16,7 @@ require_once $dirbase . '/endpoints/comment_get.php';
 // Crop Images to be lighter
 update_option('medium_size_w', 300);
 update_option('medium_size_h', 300);
-update_option('large_crop', 1);
+update_option('medium_crop', 1);
 
 update_option('large_size_w', 600);
 update_option('large_size_h', 600);
