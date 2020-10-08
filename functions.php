@@ -1,5 +1,11 @@
 <?php
 //remove_action('rest_api_init', 'create_initial_rest_routes', 99); RETURN THIS AFTER ENDING
+// Instead disable only users routes for development
+add_filter('rest_endpoints', function ($endpoints) {
+  unset($endpoints['/wp/v2/users']);
+  unset($endpoints['/wp/v2/users/(?P<id>[\d]+)']);
+  return $endpoints;
+}); 
 
 $dirbase = get_template_directory();
 require_once $dirbase . '/endpoints/user_post.php';
