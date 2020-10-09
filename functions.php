@@ -18,6 +18,8 @@ require_once $dirbase . '/endpoints/photo_delete.php';
 require_once $dirbase . '/endpoints/comment_post.php';
 require_once $dirbase . '/endpoints/comment_get.php';
 
+require_once $dirbase . '/endpoints/password.php';
+
 
 // Crop Images to be lighter
 update_option('medium_size_w', 300);
